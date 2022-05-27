@@ -28,23 +28,6 @@ else:
     print("Contraseña ingresada exitosamente")
         
 
-
-# nombre = "Emill"
-# lista=['e','l']
-# for i in nombre.lower():
-#     if i in lista:
-#         print(i)
-
-
-""" if len(password) >= 5 and len(password) <= 15 and password in ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j'] and password in ['K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T'] and password in [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] and  password in ['$', '%', '*', '@']:
-    print(f"Su contraseña es: {password}")
-else:
-    print(f"Contraseña incorrecta") """
-""" for i in password:
-    if i in ['a','b']:
-        print(f"Lo que se repite es {i}")
-"""
-
 # nombre = "Emill"
 # lista=['e','l']
 # for i in nombre.lower():

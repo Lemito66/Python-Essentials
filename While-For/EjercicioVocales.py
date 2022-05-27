@@ -18,4 +18,5 @@ def contar_vocales(cadena):
 	return contador
 for i in frase:
     print(i)
+print(contar_vocales("Emiiiiill"))
     
