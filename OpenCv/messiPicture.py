@@ -1,9 +1,9 @@
 import cv2 as cv
 import numpy as np
 from matplotlib import pyplot as plt
-img = cv.imread(r'C:\Users\lemit\Documents\Python Scripts\OpenCv\messi5.jpg',0)
+img = cv.imread('C:\\Users\\lemit\\Documents\\Python Scripts\\OpenCv\\messi5.jpg',0)
 img2 = img.copy()
-template = cv.imread(r'C:\Users\lemit\Documents\Python Scripts\OpenCv\template.jpg',0)
+template = cv.imread('C:\\Users\\lemit\\Documents\\Python Scripts\\OpenCv\\template.jpg',0)
 w, h = template.shape[::-1]
 # All the 6 methods for comparison in a list
 methods = ['cv.TM_CCOEFF', 'cv.TM_CCOEFF_NORMED', 'cv.TM_CCORR',
