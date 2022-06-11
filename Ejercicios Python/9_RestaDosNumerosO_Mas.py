@@ -1,11 +1,12 @@
-
-def sumaNumeros(cuantosNumeros):
+def restaNumeros(cuantosNumeros):
     listaNumeros=list()
+    resta=0
     for i in range(cuantosNumeros):
         try:
             numero=int(input(f"Ingresa el número {i+1}: "))
-            listaNumeros.append(numero)
+            #listaNumeros.append(numero)
+            resta=numero-resta
         except(ValueError):
             return "Error"      
-    return sum(listaNumeros)
-print(sumaNumeros(2))
+    return resta
+print(restaNumeros(2))

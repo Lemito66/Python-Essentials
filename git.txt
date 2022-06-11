@@ -1,0 +1,24 @@
+-Tener configurado VsCode
+git config --global core.editor "code --wait"
+-Windows
+ git config --global core.autocrlf true
+-Mac
+ git config --global core.autocrlf input
+-Posibles configuraciones
+git config -h
+-Borrar archivo
+git rm <nombreArchivo>
+-restaurar un archivo borrado 
+git restore --staged <nombreArchivo>
+-añadir archivos que existan
+git add <nombreArchivo>
+-añadir todos los archivos (Es mala practica) 
+git add .
+-Cambiar nombre archivo
+git mv <nombreArchivo> <nuevoNombre>
+-Ver lo que se ha cambiado 
+git diff (para salir se presiona q)
+-Historial
+git log --oneline
+-Crear Rama en el repositorio
+git push -u origin <Nombre Rama>
