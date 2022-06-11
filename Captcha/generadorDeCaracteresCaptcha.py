@@ -3,7 +3,7 @@ import string
 listaMinisculas=(list(string.ascii_lowercase))
 listaMayusculas=(list(string.ascii_uppercase))
 listaNumeros=(list(string.digits))
-listaCompleta=listaMinisculas+listaMinisculas+listaNumeros
+listaCompleta=listaMayusculas+listaMinisculas+listaNumeros
 for i in range(10):
     listaLetras=list()
     for i in range(6):
