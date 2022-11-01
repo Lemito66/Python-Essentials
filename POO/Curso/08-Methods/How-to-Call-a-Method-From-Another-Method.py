@@ -7,7 +7,16 @@ class Backpack:
     def items(self):
         return self._items
     
-    
+    #Como usar metodos dentro de otro metodo
+    #self.nombreMetodo()
+    def add_multiple_items(self, items):
+        for item in items:
+            self.add_item(item) # Usamos el metodo add_item para añadir un item
+            
+    def remove_multiple_items(self, items):
+        for item in items:
+            if item in self._items:
+                self.remove_item(item) # Usamos el metodo remove_item para remover item
     
     def add_item(self, item):
         if isinstance(item, str):
@@ -32,13 +41,9 @@ class Backpack:
         else:
             print(self._items)
 my_backpack = Backpack()
+print(my_backpack.items)
+my_backpack.add_multiple_items(['Lapiz', 'Candy','Chocolate'])
+print(my_backpack.items)
 
-my_backpack.add_item('Lapiz')
-my_backpack.add_item('Borrador')
-my_backpack.add_item('Cartuchera')
-
-print('Not Sorted:')
-my_backpack.show_items()
-
-print('Sorted:')
-my_backpack.show_items(True)
+my_backpack.remove_multiple_items(['Lapiz', 'Candy'])
+print(my_backpack.items)
