@@ -14,5 +14,5 @@ def metodo_burbuja(lista):
                 lista[j + 1] = guardar_numero_para_ser_reemplazado
                 
     return lista
- 
+
 print(metodo_burbuja([2,8,7,6,3,2,1,20,19,0]))
