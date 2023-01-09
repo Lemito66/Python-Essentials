@@ -19,5 +19,17 @@ def metodo_por_seleccion_ascendente(lista):
         lista[numero_minimo] = numero_a_reemplazar
     return lista
 
+def metodo_por_seleccion_descendente(lista):
+    for i in range(len(lista)):
+        numero_maximo = i
+        for j in range(numero_maximo + 1, len(lista)):
+            if lista[j] > lista[numero_maximo]:
+                numero_maximo = j
+        numero_a_reemplazar =  lista[i]
+        lista[i] = lista[numero_maximo]
+        lista[numero_maximo] = numero_a_reemplazar
+    return lista
+
 print(metodo_burbuja([1,78,99,100,4,-5]))
 print(metodo_por_seleccion_ascendente([1,78,99,100,4,-5]))
+print(metodo_por_seleccion_descendente([1,78,99,100,4,-5]))
