@@ -12,5 +12,9 @@ def plus_minus(arr: list):
             
     return f'{(len(list_of_numbers_positives)/len(arr)):.6f} \n{(len(list_of_numbers_negatives)/len(arr)):.6f} \n{(len(list_of_numbers_zeros)/len(arr)):.6f}'
 
+if __name__ == '__main__':
+    n = int(input().strip())
 
-print(plus_minus([-4, 3, -9, 0 ,4, 1]))
+    arr = list(map(int, input().rstrip().split()))
+
+    print(plus_minus(arr))
