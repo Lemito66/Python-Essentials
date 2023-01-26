@@ -1,5 +1,5 @@
 def counting_sort(list_of_numbers: list):
-    result = []
+    #result = []
     for i in range(len(list_of_numbers)):
         count = 0
         for j in range(1,len(list_of_numbers)):
