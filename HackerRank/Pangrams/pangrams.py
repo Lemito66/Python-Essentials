@@ -19,6 +19,6 @@ def pangrams(sentence: str):
 
 
 
-print(pangrams('We promptly judged antique ivory buckles for the next prize'))
-#print(pangrams('We promptly judged antique ivory buckles for the prize'))
+print(pangrams('We promptly judged antique ivory buckles for the next prize')) # pangram
+#print(pangrams('We promptly judged antique ivory buckles for the prize')) #not pangram
 
