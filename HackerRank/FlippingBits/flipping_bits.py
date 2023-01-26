@@ -19,9 +19,14 @@ def print_list(list_of_numbers:list):
         cadena += str(i)
     return cadena[::-1]
 
+#Esta es la solución
+def flipping_bits(n: int) -> int:
+    return (2**32-1)^n
 
 
-print(len(flippingBits(1)))
+
+print(flipping_bits(4294967286))
+print(flipping_bits(4294967294))
 
 
 
