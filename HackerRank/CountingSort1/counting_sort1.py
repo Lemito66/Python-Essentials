@@ -1,13 +1,13 @@
 def counting_sort(list_of_numbers: list):
-    #result = []
+    result = []
     for i in range(len(list_of_numbers)):
         count = 0
-        for j in range(1,len(list_of_numbers)):
+        for j in range(i+1,len(list_of_numbers)):
             if list_of_numbers[i] == list_of_numbers[j]:
                 count += 1
-        list_of_numbers[i] = count
-        #result.append(count)
-    return list_of_numbers
+        #list_of_numbers[i] = count
+        result.append(count)
+    return result
 
 print(counting_sort([1,1,1,2,1]))
 print(counting_sort([63, 25, 73, 1, 98, 73, 56, 84, 86, 57, 16, 83, 8, 25, 81, 56, 9, 53, 98, 67, 99, 12, 83, 89, 80, 91, 39, 86, 76, 85, 74, 39, 25, 90, 59, 10, 94, 32, 44, 3, 89, 30, 27, 79, 46, 96, 27, 32, 18, 21, 92, 69, 81, 40, 40, 34, 68, 78, 24, 87, 42, 69, 23, 41, 78, 22, 6, 90, 99, 89, 50, 30, 20, 1, 43, 3, 70, 95, 33, 46, 44, 9, 69, 48, 33, 60, 65, 16, 82, 67, 61, 32, 21, 79, 75, 75, 13, 87, 70, 33]))
